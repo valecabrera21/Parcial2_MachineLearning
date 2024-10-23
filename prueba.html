@@ -1,0 +1,2900 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Librerías &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'prueba';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Librerías</a></li>
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fprueba.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/prueba.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Librerías</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Librerías</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sobre-el-dataset">Sobre el dataset</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datos-faltantes">Datos faltantes</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sobre-las-variables">Sobre las variables</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ticker-y-membresia-en-indice-principal">Ticker y membresía en índice principal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#capitalizacion-del-mercado">Capitalización del mercado</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#indicadores-de-rentabilidad-y-desempeno-financiero">Indicadores de rentabilidad y desempeño financiero</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#roa-roe-y-roi">ROA, ROE y ROI</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#margenes">Márgenes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ganancias-e-ingresos">Ganancias e ingresos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ganancias-diluidas-por-accion">Ganancias diluidas por acción</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#crecimiento-de-eps">Crecimiento de EPS</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#otras-variables">Otras variables</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ratios-financieros">Ratios financieros</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#correlacion-de-variables-de-interes">Correlación de variables de interés</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#imputacion-de-datos-faltantes-con-iterativeimputer">Imputación de datos faltantes con IterativeImputer()</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vif">VIF</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="librerias">
+<h1>Librerías<a class="headerlink" href="#librerias" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">missingno</span> <span class="k">as</span> <span class="nn">msno</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">from</span> <span class="nn">statsmodels.stats.outliers_influence</span> <span class="kn">import</span> <span class="n">variance_inflation_factor</span>
+<span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="k">as</span> <span class="nn">sm</span>
+<span class="kn">from</span> <span class="nn">sklearn.experimental</span> <span class="kn">import</span> <span class="n">enable_iterative_imputer</span>
+<span class="kn">from</span> <span class="nn">sklearn.impute</span> <span class="kn">import</span> <span class="n">IterativeImputer</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="sobre-el-dataset">
+<h1>Sobre el dataset<a class="headerlink" href="#sobre-el-dataset" title="Link to this heading">#</a></h1>
+<p>Este dataset contiene una amplia gama de indicadores financieros clave de empresas que forman parte del índice S&amp;P500. Incluye información fundamental, como la capitalización de mercado, ingresos, y utilidades, junto con ratios financieros esenciales como el P/E (precio a ganancias), P/B (precio a valor en libros), y P/S (precio a ventas). Además, el dataset abarca datos de rendimiento a corto y largo plazo, indicadores de rentabilidad como ROA (retorno sobre activos) y ROE (retorno sobre capital), y variables relacionadas con la actividad en el mercado, como el interés corto y la volatilidad. Este conjunto de datos es ideal para analizar tanto el desempeño financiero como el comportamiento en el mercado de las principales empresas del S&amp;P500, ofreciendo una visión integral de su situación económica, liquidez, y perspectivas de crecimiento. Debido al objetivo de este proyecto, se hará enfoque especial en indicadores como ROE, ROA y ROI.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;snp500_companies_description.csv&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Company</th>
+      <th>Major index membership</th>
+      <th>Market capitalization</th>
+      <th>Income (ttm)</th>
+      <th>Revenue (ttm)</th>
+      <th>Book value per share (mrq)</th>
+      <th>Cash per share (mrq)</th>
+      <th>Dividend (annual)</th>
+      <th>Dividend yield (annual)</th>
+      <th>Full time employees</th>
+      <th>...</th>
+      <th>Performance (Quarter)</th>
+      <th>Performance (Half Year)</th>
+      <th>Performance (Year)</th>
+      <th>Performance (Year To Date)</th>
+      <th>Beta</th>
+      <th>Average True Range (14)</th>
+      <th>Volatility (Week, Month)</th>
+      <th>Previous close</th>
+      <th>Current stock price</th>
+      <th>Performance (today)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>A</td>
+      <td>S&amp;P 500</td>
+      <td>41.05B</td>
+      <td>1.32B</td>
+      <td>6.93B</td>
+      <td>18.95</td>
+      <td>NaN</td>
+      <td>0.90</td>
+      <td>0.64%</td>
+      <td>18300</td>
+      <td>...</td>
+      <td>-6.59%</td>
+      <td>7.56%</td>
+      <td>9.32%</td>
+      <td>-5.53%</td>
+      <td>1.04</td>
+      <td>3.27</td>
+      <td>2.37% 2.09%</td>
+      <td>140.90</td>
+      <td>141.37</td>
+      <td>0.33%</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>AAL</td>
+      <td>S&amp;P 500</td>
+      <td>10.65B</td>
+      <td>127.00M</td>
+      <td>48.97B</td>
+      <td>-8.91</td>
+      <td>13.97</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>129700</td>
+      <td>...</td>
+      <td>14.14%</td>
+      <td>17.76%</td>
+      <td>21.07%</td>
+      <td>28.59%</td>
+      <td>1.56</td>
+      <td>0.48</td>
+      <td>2.65% 2.73%</td>
+      <td>16.59</td>
+      <td>16.36</td>
+      <td>-1.41%</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>AAP</td>
+      <td>S&amp;P 500</td>
+      <td>7.88B</td>
+      <td>501.90M</td>
+      <td>11.15B</td>
+      <td>45.06</td>
+      <td>4.52</td>
+      <td>6.00</td>
+      <td>4.54%</td>
+      <td>40000</td>
+      <td>...</td>
+      <td>-9.20%</td>
+      <td>-25.89%</td>
+      <td>-34.12%</td>
+      <td>-10.13%</td>
+      <td>1.15</td>
+      <td>3.70</td>
+      <td>2.08% 2.39%</td>
+      <td>132.21</td>
+      <td>132.14</td>
+      <td>-0.05%</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>AAPL</td>
+      <td>DJIA, NDX, S&amp;P 500</td>
+      <td>2336.71B</td>
+      <td>95.17B</td>
+      <td>387.54B</td>
+      <td>3.57</td>
+      <td>3.36</td>
+      <td>0.92</td>
+      <td>0.60%</td>
+      <td>164000</td>
+      <td>...</td>
+      <td>7.70%</td>
+      <td>-1.31%</td>
+      <td>-2.24%</td>
+      <td>18.46%</td>
+      <td>1.29</td>
+      <td>3.30</td>
+      <td>1.87% 1.86%</td>
+      <td>152.87</td>
+      <td>153.91</td>
+      <td>0.68%</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>ABBV</td>
+      <td>S&amp;P 500</td>
+      <td>261.85B</td>
+      <td>11.78B</td>
+      <td>58.05B</td>
+      <td>9.74</td>
+      <td>5.27</td>
+      <td>5.92</td>
+      <td>3.96%</td>
+      <td>50000</td>
+      <td>...</td>
+      <td>-8.84%</td>
+      <td>7.60%</td>
+      <td>1.43%</td>
+      <td>-7.65%</td>
+      <td>0.55</td>
+      <td>2.80</td>
+      <td>1.91% 1.86%</td>
+      <td>149.60</td>
+      <td>149.25</td>
+      <td>-0.23%</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 73 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 496 entries, 0 to 495
+Data columns (total 73 columns):
+ #   Column                                                                     Non-Null Count  Dtype  
+---  ------                                                                     --------------  -----  
+ 0   Company                                                                    496 non-null    object 
+ 1   Major index membership                                                     490 non-null    object 
+ 2   Market capitalization                                                      496 non-null    object 
+ 3   Income (ttm)                                                               491 non-null    object 
+ 4   Revenue (ttm)                                                              496 non-null    object 
+ 5   Book value per share (mrq)                                                 495 non-null    object 
+ 6   Cash per share (mrq)                                                       475 non-null    object 
+ 7   Dividend (annual)                                                          393 non-null    object 
+ 8   Dividend yield (annual)                                                    393 non-null    object 
+ 9   Full time employees                                                        495 non-null    object 
+ 10  Stock has options trading on a market exchange                             496 non-null    object 
+ 11  Stock available to sell short                                              496 non-null    object 
+ 12  Analysts&#39; mean recommendation (1=Buy 5=Sell)                               489 non-null    object 
+ 13  Price-to-Earnings (ttm)                                                    457 non-null    object 
+ 14  Forward Price-to-Earnings (next fiscal year)                               491 non-null    object 
+ 15  Price-to-Earnings-to-Growth                                                381 non-null    object 
+ 16  Price-to-Sales (ttm)                                                       496 non-null    float64
+ 17  Price-to-Book (mrq)                                                        462 non-null    object 
+ 18  Price to cash per share (mrq)                                              475 non-null    object 
+ 19  Price to Free Cash Flow (ttm)                                              406 non-null    object 
+ 20  Quick Ratio (mrq)                                                          406 non-null    object 
+ 21  Current Ratio (mrq)                                                        407 non-null    object 
+ 22  Total Debt to Equity (mrq)                                                 458 non-null    object 
+ 23  Long Term Debt to Equity (mrq)                                             458 non-null    object 
+ 24  Distance from 20-Day Simple Moving Average                                 496 non-null    object 
+ 25  Diluted EPS (ttm)                                                          495 non-null    object 
+ 26  EPS estimate for next year                                                 493 non-null    object 
+ 27  EPS estimate for next quarter                                              493 non-null    object 
+ 28  EPS growth this year                                                       493 non-null    object 
+ 29  EPS growth next year                                                       493 non-null    object 
+ 30  Long term annual growth estimate (5 years)                                 461 non-null    object 
+ 31  Annual EPS growth past 5 years                                             492 non-null    object 
+ 32  Annual sales growth past 5 years                                           489 non-null    object 
+ 33  Quarterly revenue growth (YoY)                                             496 non-null    object 
+ 34  Quarterly earnings growth (YoY)                                            488 non-null    object 
+ 35  Earnings date&lt;br&gt;&lt;br&gt;BMO = Before Market Open&lt;br&gt;AMC = After Market Close  495 non-null    object 
+ 36  Distance from 50-Day Simple Moving Average                                 496 non-null    object 
+ 37  Insider ownership                                                          496 non-null    object 
+ 38  Insider transactions (6-Month change in Insider Ownership)                 495 non-null    object 
+ 39  Institutional ownership                                                    477 non-null    object 
+ 40  Institutional transactions (3-Month change in Institutional Ownership)     490 non-null    object 
+ 41  Return on Assets (ttm)                                                     489 non-null    object 
+ 42  Return on Equity (ttm)                                                     484 non-null    object 
+ 43  Return on Investment (ttm)                                                 490 non-null    object 
+ 44  Gross Margin (ttm)                                                         425 non-null    object 
+ 45  Operating Margin (ttm)                                                     487 non-null    object 
+ 46  Net Profit Margin (ttm)                                                    487 non-null    object 
+ 47  Dividend Payout Ratio (ttm)                                                461 non-null    object 
+ 48  Distance from 200-Day Simple Moving Average                                496 non-null    object 
+ 49  Shares outstanding                                                         496 non-null    object 
+ 50  Shares float                                                               496 non-null    object 
+ 51  Short interest share / ratio                                               496 non-null    object 
+ 52  Short interest                                                             496 non-null    object 
+ 53  Analysts&#39; mean target price                                                495 non-null    object 
+ 54  52-Week trading range                                                      496 non-null    object 
+ 55  Distance from 52-Week High                                                 496 non-null    object 
+ 56  Distance from 52-Week Low                                                  496 non-null    object 
+ 57  Relative Strength Index                                                    496 non-null    float64
+ 58  Relative volume                                                            496 non-null    float64
+ 59  Average volume (3 month)                                                   496 non-null    object 
+ 60  Volume                                                                     496 non-null    object 
+ 61  Performance (Week)                                                         496 non-null    object 
+ 62  Performance (Month)                                                        496 non-null    object 
+ 63  Performance (Quarter)                                                      496 non-null    object 
+ 64  Performance (Half Year)                                                    496 non-null    object 
+ 65  Performance (Year)                                                         496 non-null    object 
+ 66  Performance (Year To Date)                                                 496 non-null    object 
+ 67  Beta                                                                       487 non-null    object 
+ 68  Average True Range (14)                                                    496 non-null    float64
+ 69  Volatility (Week, Month)                                                   496 non-null    object 
+ 70  Previous close                                                             496 non-null    float64
+ 71  Current stock price                                                        496 non-null    float64
+ 72  Performance (today)                                                        496 non-null    object 
+dtypes: float64(6), object(67)
+memory usage: 283.0+ KB
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Company</th>
+      <th>Major index membership</th>
+      <th>Market capitalization</th>
+      <th>Income (ttm)</th>
+      <th>Revenue (ttm)</th>
+      <th>Book value per share (mrq)</th>
+      <th>Cash per share (mrq)</th>
+      <th>Dividend (annual)</th>
+      <th>Dividend yield (annual)</th>
+      <th>Full time employees</th>
+      <th>...</th>
+      <th>Performance (Quarter)</th>
+      <th>Performance (Half Year)</th>
+      <th>Performance (Year)</th>
+      <th>Performance (Year To Date)</th>
+      <th>Beta</th>
+      <th>Average True Range (14)</th>
+      <th>Volatility (Week, Month)</th>
+      <th>Previous close</th>
+      <th>Current stock price</th>
+      <th>Performance (today)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>496</td>
+      <td>490</td>
+      <td>496</td>
+      <td>491</td>
+      <td>496</td>
+      <td>495</td>
+      <td>475</td>
+      <td>393</td>
+      <td>393</td>
+      <td>495</td>
+      <td>...</td>
+      <td>496</td>
+      <td>496</td>
+      <td>496</td>
+      <td>496</td>
+      <td>487</td>
+      <td>496.000000</td>
+      <td>496</td>
+      <td>496.000000</td>
+      <td>496.000000</td>
+      <td>496</td>
+    </tr>
+    <tr>
+      <th>unique</th>
+      <td>496</td>
+      <td>4</td>
+      <td>474</td>
+      <td>419</td>
+      <td>460</td>
+      <td>480</td>
+      <td>408</td>
+      <td>199</td>
+      <td>270</td>
+      <td>409</td>
+      <td>...</td>
+      <td>465</td>
+      <td>476</td>
+      <td>486</td>
+      <td>459</td>
+      <td>158</td>
+      <td>NaN</td>
+      <td>492</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>309</td>
+    </tr>
+    <tr>
+      <th>top</th>
+      <td>WMB</td>
+      <td>S&amp;P 500</td>
+      <td>13.76B</td>
+      <td>1.32B</td>
+      <td>2.59B</td>
+      <td>38.67</td>
+      <td>0.50</td>
+      <td>1.00</td>
+      <td>1.45%</td>
+      <td>45000</td>
+      <td>...</td>
+      <td>0.48%</td>
+      <td>-8.01%</td>
+      <td>-12.30%</td>
+      <td>2.28%</td>
+      <td>0.94</td>
+      <td>NaN</td>
+      <td>2.05% 1.93%</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.43%</td>
+    </tr>
+    <tr>
+      <th>freq</th>
+      <td>1</td>
+      <td>389</td>
+      <td>3</td>
+      <td>7</td>
+      <td>3</td>
+      <td>2</td>
+      <td>4</td>
+      <td>9</td>
+      <td>6</td>
+      <td>5</td>
+      <td>...</td>
+      <td>3</td>
+      <td>3</td>
+      <td>2</td>
+      <td>3</td>
+      <td>9</td>
+      <td>NaN</td>
+      <td>2</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>4.037661</td>
+      <td>NaN</td>
+      <td>171.426774</td>
+      <td>170.964637</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>6.911350</td>
+      <td>NaN</td>
+      <td>317.879747</td>
+      <td>318.199345</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.200000</td>
+      <td>NaN</td>
+      <td>3.020000</td>
+      <td>3.020000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1.305000</td>
+      <td>NaN</td>
+      <td>58.837500</td>
+      <td>58.747500</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2.390000</td>
+      <td>NaN</td>
+      <td>106.845000</td>
+      <td>105.140000</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>4.375000</td>
+      <td>NaN</td>
+      <td>199.462500</td>
+      <td>199.042500</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>112.590000</td>
+      <td>NaN</td>
+      <td>5336.760000</td>
+      <td>5351.460000</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+<p>11 rows × 73 columns</p>
+</div></div></div>
+</div>
+<section id="datos-faltantes">
+<h2>Datos faltantes<a class="headerlink" href="#datos-faltantes" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">msno</span><span class="o">.</span><span class="n">matrix</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="p">(</span><span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">),</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Matriz de Datos Faltantes&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 1200x600 with 0 Axes&gt;
+</pre></div>
+</div>
+<img alt="_images/8019e2b15f253005a536b0440de4b3ca37a47bc03ef24de07a15fd08bc46f007.png" src="_images/8019e2b15f253005a536b0440de4b3ca37a47bc03ef24de07a15fd08bc46f007.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">missing_count</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">missing_percentage</span> <span class="o">=</span> <span class="p">(</span><span class="n">missing_count</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">))</span> <span class="o">*</span> <span class="mi">100</span>
+<span class="n">missing_data_summary</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;Missing Count&#39;</span><span class="p">:</span> <span class="n">missing_count</span><span class="p">,</span> <span class="s1">&#39;Missing Percentage&#39;</span><span class="p">:</span> <span class="n">missing_percentage</span><span class="p">})</span>
+<span class="n">missing_data_summary</span> <span class="o">=</span> <span class="n">missing_data_summary</span><span class="p">[</span><span class="n">missing_data_summary</span><span class="p">[</span><span class="s1">&#39;Missing Count&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">]</span>
+<span class="n">missing_data_summary</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span> <span class="s1">&#39;Missing Count&#39;</span><span class="p">,</span><span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Missing Count</th>
+      <th>Missing Percentage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Price-to-Earnings-to-Growth</th>
+      <td>115</td>
+      <td>23.185484</td>
+    </tr>
+    <tr>
+      <th>Dividend yield (annual)</th>
+      <td>103</td>
+      <td>20.766129</td>
+    </tr>
+    <tr>
+      <th>Dividend (annual)</th>
+      <td>103</td>
+      <td>20.766129</td>
+    </tr>
+    <tr>
+      <th>Price to Free Cash Flow (ttm)</th>
+      <td>90</td>
+      <td>18.145161</td>
+    </tr>
+    <tr>
+      <th>Quick Ratio (mrq)</th>
+      <td>90</td>
+      <td>18.145161</td>
+    </tr>
+    <tr>
+      <th>Current Ratio (mrq)</th>
+      <td>89</td>
+      <td>17.943548</td>
+    </tr>
+    <tr>
+      <th>Gross Margin (ttm)</th>
+      <td>71</td>
+      <td>14.314516</td>
+    </tr>
+    <tr>
+      <th>Price-to-Earnings (ttm)</th>
+      <td>39</td>
+      <td>7.862903</td>
+    </tr>
+    <tr>
+      <th>Long Term Debt to Equity (mrq)</th>
+      <td>38</td>
+      <td>7.661290</td>
+    </tr>
+    <tr>
+      <th>Total Debt to Equity (mrq)</th>
+      <td>38</td>
+      <td>7.661290</td>
+    </tr>
+    <tr>
+      <th>Dividend Payout Ratio (ttm)</th>
+      <td>35</td>
+      <td>7.056452</td>
+    </tr>
+    <tr>
+      <th>Long term annual growth estimate (5 years)</th>
+      <td>35</td>
+      <td>7.056452</td>
+    </tr>
+    <tr>
+      <th>Price-to-Book (mrq)</th>
+      <td>34</td>
+      <td>6.854839</td>
+    </tr>
+    <tr>
+      <th>Cash per share (mrq)</th>
+      <td>21</td>
+      <td>4.233871</td>
+    </tr>
+    <tr>
+      <th>Price to cash per share (mrq)</th>
+      <td>21</td>
+      <td>4.233871</td>
+    </tr>
+    <tr>
+      <th>Institutional ownership</th>
+      <td>19</td>
+      <td>3.830645</td>
+    </tr>
+    <tr>
+      <th>Return on Equity (ttm)</th>
+      <td>12</td>
+      <td>2.419355</td>
+    </tr>
+    <tr>
+      <th>Net Profit Margin (ttm)</th>
+      <td>9</td>
+      <td>1.814516</td>
+    </tr>
+    <tr>
+      <th>Beta</th>
+      <td>9</td>
+      <td>1.814516</td>
+    </tr>
+    <tr>
+      <th>Operating Margin (ttm)</th>
+      <td>9</td>
+      <td>1.814516</td>
+    </tr>
+    <tr>
+      <th>Quarterly earnings growth (YoY)</th>
+      <td>8</td>
+      <td>1.612903</td>
+    </tr>
+    <tr>
+      <th>Analysts' mean recommendation (1=Buy 5=Sell)</th>
+      <td>7</td>
+      <td>1.411290</td>
+    </tr>
+    <tr>
+      <th>Annual sales growth past 5 years</th>
+      <td>7</td>
+      <td>1.411290</td>
+    </tr>
+    <tr>
+      <th>Return on Assets (ttm)</th>
+      <td>7</td>
+      <td>1.411290</td>
+    </tr>
+    <tr>
+      <th>Return on Investment (ttm)</th>
+      <td>6</td>
+      <td>1.209677</td>
+    </tr>
+    <tr>
+      <th>Institutional transactions (3-Month change in Institutional Ownership)</th>
+      <td>6</td>
+      <td>1.209677</td>
+    </tr>
+    <tr>
+      <th>Major index membership</th>
+      <td>6</td>
+      <td>1.209677</td>
+    </tr>
+    <tr>
+      <th>Income (ttm)</th>
+      <td>5</td>
+      <td>1.008065</td>
+    </tr>
+    <tr>
+      <th>Forward Price-to-Earnings (next fiscal year)</th>
+      <td>5</td>
+      <td>1.008065</td>
+    </tr>
+    <tr>
+      <th>Annual EPS growth past 5 years</th>
+      <td>4</td>
+      <td>0.806452</td>
+    </tr>
+    <tr>
+      <th>EPS estimate for next year</th>
+      <td>3</td>
+      <td>0.604839</td>
+    </tr>
+    <tr>
+      <th>EPS growth next year</th>
+      <td>3</td>
+      <td>0.604839</td>
+    </tr>
+    <tr>
+      <th>EPS estimate for next quarter</th>
+      <td>3</td>
+      <td>0.604839</td>
+    </tr>
+    <tr>
+      <th>EPS growth this year</th>
+      <td>3</td>
+      <td>0.604839</td>
+    </tr>
+    <tr>
+      <th>Full time employees</th>
+      <td>1</td>
+      <td>0.201613</td>
+    </tr>
+    <tr>
+      <th>Book value per share (mrq)</th>
+      <td>1</td>
+      <td>0.201613</td>
+    </tr>
+    <tr>
+      <th>Diluted EPS (ttm)</th>
+      <td>1</td>
+      <td>0.201613</td>
+    </tr>
+    <tr>
+      <th>Earnings date&lt;br&gt;&lt;br&gt;BMO = Before Market Open&lt;br&gt;AMC = After Market Close</th>
+      <td>1</td>
+      <td>0.201613</td>
+    </tr>
+    <tr>
+      <th>Insider transactions (6-Month change in Insider Ownership)</th>
+      <td>1</td>
+      <td>0.201613</td>
+    </tr>
+    <tr>
+      <th>Analysts' mean target price</th>
+      <td>1</td>
+      <td>0.201613</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Se encuentran datos faltantes de 40 de las variables, sin embargo el porcentaje de estos en ninguna supera el 25%.</p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="sobre-las-variables">
+<h1>Sobre las variables<a class="headerlink" href="#sobre-las-variables" title="Link to this heading">#</a></h1>
+<section id="ticker-y-membresia-en-indice-principal">
+<h2>Ticker y membresía en índice principal<a class="headerlink" href="#ticker-y-membresia-en-indice-principal" title="Link to this heading">#</a></h2>
+<p>Este dataset cuenta con 73 variables y 496 registros, dentro de estas se puede encontrar el <strong>ticker</strong> o símbolo bursátil de la empresa para cada uno de los registros y el <code class="docutils literal notranslate"><span class="pre">Major</span> <span class="pre">index</span> <span class="pre">membership</span></code> o membresía en índice principal que indica si la empresa pertenece a un índice bursátil.</p>
+<div class="admonition-que-es-un-indice-bursatil admonition">
+<p class="admonition-title">¿Que és un índice bursátil?</p>
+<p>Un índice bursátil es una medida que refleja el comportamiento general de un grupo de acciones en el mercado de valores. Existen muchos índices diferentes en el mundo, y cada uno agrupa empresas con características comunes, como el tamaño, el tipo de industria o la región, para facilitar el análisis de las tendencias y el rendimiento en los mercados financieros.</p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="n">msno</span><span class="o">.</span><span class="n">matrix</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;Company&#39;</span><span class="p">,</span><span class="s1">&#39;Major index membership&#39;</span><span class="p">]],</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Matriz de Datos Faltantes&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 300x300 with 0 Axes&gt;
+</pre></div>
+</div>
+<img alt="_images/77c7d43c202e52e2c3e16dd30a82d7bcb51a2ff31826658ea2fe84c1c749695e.png" src="_images/77c7d43c202e52e2c3e16dd30a82d7bcb51a2ff31826658ea2fe84c1c749695e.png" />
+</div>
+</div>
+<p>Se presentan 6 datos faltantes en la variable asociada a la membresía en índice debido a empresas que no figuran en ninguno de estos.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">pie</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Major index membership&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(),</span> <span class="n">labels</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Major index membership&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">autopct</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%1.1f%%</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">startangle</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Distribución de empresas según membresía en índice principal&quot;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/965a2f70b70eb41e0df077fae72a2079232c3a3e3df6a8a1a9f980bb95014258.png" src="_images/965a2f70b70eb41e0df077fae72a2079232c3a3e3df6a8a1a9f980bb95014258.png" />
+</div>
+</div>
+<p>El 78.4% de las empresas solo tienen presencia en el índice <strong>SP 500</strong>, el cual es uno de los más grandes y más conocidos en el mundo compuesto de las 500 empresas principales de estados unidos. El 14.3% de empresas forman parte tanto del <strong>NASDAQ 100 (NDX)</strong> como del <strong>S&amp;P 500</strong>. El <em>NASDAQ 100</em> está compuesto principalmente por grandes compañías tecnológicas, lo que significa que estas empresas tienen una doble representación, abarcando tanto el sector tecnológico como el mercado más amplio de Estados Unidos. El 4.6% están presentes en el <strong>Dow Jones Industrial Average (DJIA)</strong> y también en el <strong>S&amp;P 500</strong>. El DJIA incluye solo 30 grandes empresas industriales, así que estas compañías forman parte de los principales índices tanto por su peso en la industria como en el mercado general de EE.UU. Y por último, el 1.4% tiene presencia en los tres grandes índices: <strong>DJIA</strong>, <strong>NASDAQ 100 (NDX)</strong> y <strong>S&amp;P 500</strong>. Estas empresas son muy significativas, tanto en el sector industrial como tecnológico, y tienen un impacto en el mercado más amplio. En cuanto al 1.2% restante, son emrpesas que no forman parte de estos índices y corresponden a: IPG Photonics Corporation (IPGP), PENN Entertainment, Inc. (PENN), PVH Corp. (PVH), Under Armour, Inc. (UA), Under Armour, Inc. (UAA) y Vornado Realty Trust (VNO).</p>
+</section>
+<section id="capitalizacion-del-mercado">
+<h2>Capitalización del mercado<a class="headerlink" href="#capitalizacion-del-mercado" title="Link to this heading">#</a></h2>
+<p>La capitalización de mercado (<code class="docutils literal notranslate"><span class="pre">Market</span> <span class="pre">capitalization</span></code>) es el valor total de mercado de una empresa, determinado por el precio de sus acciones y es una medida utilizada para valorar el tamaño y la importancia de una empresa en el mercado.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Market capitalization&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.series.Series&#39;&gt;
+RangeIndex: 496 entries, 0 to 495
+Series name: Market capitalization
+Non-Null Count  Dtype 
+--------------  ----- 
+496 non-null    object
+dtypes: object(1)
+memory usage: 4.0+ KB
+</pre></div>
+</div>
+</div>
+</div>
+<p>Se nota que esta variable no cuenta con datos faltantes.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Existen varuables que contienen M y B para indicar millones y billones, aquí se pasan a enteros. </span>
+<span class="k">def</span> <span class="nf">clean_mb</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+        <span class="k">if</span> <span class="s1">&#39;B&#39;</span> <span class="ow">in</span> <span class="n">x</span><span class="p">:</span>
+            <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">))</span> <span class="o">*</span> <span class="mf">1e9</span>
+        <span class="k">elif</span> <span class="s1">&#39;M&#39;</span> <span class="ow">in</span> <span class="n">x</span><span class="p">:</span>
+            <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;M&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">))</span> <span class="o">*</span> <span class="mf">1e6</span>
+        <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">if</span> <span class="n">pd</span><span class="o">.</span><span class="n">notnull</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">else</span> <span class="n">x</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Market capitalization&#39;</span><span class="p">]</span> <span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Market capitalization&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">clean_mb</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Market capitalization&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>count    4.960000e+02
+mean     7.195290e+10
+std      1.744565e+11
+min      3.080000e+09
+25%      1.595000e+10
+50%      2.990500e+10
+75%      5.860500e+10
+max      2.336710e+12
+Name: Market capitalization, dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Market capitalization&#39;</span><span class="p">],</span> <span class="n">orient</span><span class="o">=</span><span class="s1">&#39;h&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Boxplot de distribución de la capitalización del mercado&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Ganancias&#39;</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/75a9ec11427d0a0799ed59d1659d5d8dd5f7682cd8317761335f770a03ccd497.png" src="_images/75a9ec11427d0a0799ed59d1659d5d8dd5f7682cd8317761335f770a03ccd497.png" />
+</div>
+</div>
+<p>En promedio, las empresas tienen una capitalización de mercado de 71.95 mil millones de dólares, lo que indica un tamaño considerable. Sin embargo, la desviación estándar es elevada, alcanzando los 174.46 mil millones, lo que sugiere una gran variabilidad en el tamaño de las empresas dentro del conjunto de datos.</p>
+<p>Los percentiles revelan diferencias notables: el 25% de las empresas tiene una capitalización de mercado menor a 15.95 mil millones, mientras que el 75% supera los 58.60 mil millones, indicando que, aunque hay empresas de menor tamaño, también hay muchas de tamaño significativo. El valor mínimo registrado es de 3.08 mil millones, mostrando la presencia de algunas empresas relativamente pequeñas en el mercado. Por otro lado, el valor máximo, de 2.33 billones de dólares, resalta la magnitud de algunas de las empresas más grandes, probablemente corporaciones globales de gran impacto económico.</p>
+<p>Este análisis muestra una distribución asimétrica, con un pequeño grupo de gigantes que distorsionan el promedio y la variabilidad del grupo, tal como se puede observar en el boxplot y la gran cantidad de datos atípicos presentes en estos.</p>
+</section>
+<section id="indicadores-de-rentabilidad-y-desempeno-financiero">
+<h2>Indicadores de rentabilidad y desempeño financiero<a class="headerlink" href="#indicadores-de-rentabilidad-y-desempeno-financiero" title="Link to this heading">#</a></h2>
+<p>En esta sección se analizarán las variables de mayor interés para este proyecto que son los indicadores de rentabilidad y desempeño financierto, los cuáles son métricas utilizadas para evaluar la eficiencia, la capacidad de generar beneficios y la salud financiera de una empresa. En primer lugar analizaremos los asociados a retornos: <strong>ROA</strong>, <strong>ROE</strong> y <strong>ROI</strong>.</p>
+<section id="roa-roe-y-roi">
+<h3>ROA, ROE y ROI<a class="headerlink" href="#roa-roe-y-roi" title="Link to this heading">#</a></h3>
+<p><strong>ROA</strong>, <strong>ROE</strong> y <strong>ROI</strong> son tres indicadores financieros clave utilizados para medir la rentabilidad y eficiencia de una empresa.</p>
+<ul class="simple">
+<li><p><em>ROA o Retorno sobre los activos</em>: Mide la eficiencia con la que una empresa utiliza sus activos para generar beneficios.
+$<span class="math notranslate nohighlight">\(ROA = \frac{\textup{Ingreso neto}}{\textup{Total de activos}}*100\)</span>$</p></li>
+<li><p><em>ROE o Retorno sobre el capital</em>: Indica la rentabilidad que obtiene una empresa sobre los fondos propios de los accionistas. Refleja cuán bien la empresa utiliza el capital de los inversores para generar beneficios.
+$<span class="math notranslate nohighlight">\(ROE = \frac{\textup{Ingreso neto}}{\textup{Patrimonio neto}}*100\)</span>$</p></li>
+<li><p><em>ROI o retorno sobre la inversión</em>: Mide el rendimiento de una inversión en relación con su costo. Es un indicador general de rentabilidad que se usa tanto en el análisis financiero de empresas como en la evaluación de proyectos de inversión.
+$<span class="math notranslate nohighlight">\(ROI = \frac{\textup{Ingreso neto}}{\textup{Costo de la inversión}}*100\)</span>$</p></li>
+</ul>
+<p>Cada uno de estos ratios proporciona una visión diferente de la eficiencia y rentabilidad, y son ampliamente utilizados por inversores y analistas para evaluar el desempeño financiero de una empresa.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;Return on Assets (ttm)&#39;</span><span class="p">,</span> <span class="s1">&#39;Return on Equity (ttm)&#39;</span><span class="p">,</span> <span class="s1">&#39;Return on Investment (ttm)&#39;</span><span class="p">]:</span>
+    <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s1">&#39;%&#39;</span><span class="p">))</span> <span class="o">/</span> <span class="mi">100</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="ow">and</span> <span class="s1">&#39;%&#39;</span> <span class="ow">in</span> <span class="n">x</span> <span class="k">else</span> <span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">if</span> <span class="n">pd</span><span class="o">.</span><span class="n">notnull</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">else</span> <span class="n">x</span><span class="p">))</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;Return on Assets (ttm)&#39;</span><span class="p">,</span> <span class="s1">&#39;Return on Equity (ttm)&#39;</span><span class="p">,</span> <span class="s1">&#39;Return on Investment (ttm)&#39;</span><span class="p">]]</span>
+
+<span class="c1"># Ahora está en porcentajes sin simbolo entre 100.</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 496 entries, 0 to 495
+Data columns (total 3 columns):
+ #   Column                      Non-Null Count  Dtype  
+---  ------                      --------------  -----  
+ 0   Return on Assets (ttm)      489 non-null    float64
+ 1   Return on Equity (ttm)      484 non-null    float64
+ 2   Return on Investment (ttm)  490 non-null    float64
+dtypes: float64(3)
+memory usage: 11.8 KB
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="n">msno</span><span class="o">.</span><span class="n">matrix</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Matriz de Datos Faltantes&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 300x300 with 0 Axes&gt;
+</pre></div>
+</div>
+<img alt="_images/dde428b327041bc4b0d9c185102ca31d6846b9a3f3ebbd793255b7c373857ec6.png" src="_images/dde428b327041bc4b0d9c185102ca31d6846b9a3f3ebbd793255b7c373857ec6.png" />
+</div>
+</div>
+<p>Se nota la presencia de datos faltantes: 7 en ROA, 12 en ROE y 6 ROI, incluso hay registros en los que no se tiene ningun tipo de información sobre los retornos (7).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">describe</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Return on Assets (ttm)</th>
+      <th>Return on Equity (ttm)</th>
+      <th>Return on Investment (ttm)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>489.000000</td>
+      <td>484.000000</td>
+      <td>490.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>0.073462</td>
+      <td>0.176826</td>
+      <td>0.151571</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>0.079809</td>
+      <td>0.824657</td>
+      <td>0.208332</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>-0.325000</td>
+      <td>-8.495000</td>
+      <td>-0.455000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>0.026000</td>
+      <td>0.076750</td>
+      <td>0.056000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>0.060000</td>
+      <td>0.151000</td>
+      <td>0.115500</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>0.116000</td>
+      <td>0.309250</td>
+      <td>0.198000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>0.374000</td>
+      <td>9.249000</td>
+      <td>3.264000</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>En promedio, las empresas generan un retorno del 7.35% sobre sus activos, un 17.68% sobre su capital y un 15.16% sobre sus inversiones. Sin embargo, la desviación estándar revela una gran variabilidad, especialmente en el ROE, que tiene una desviación estándar del 82.47%, sugiriendo que hay diferencias significativas en la capacidad de las empresas para generar ganancias en relación con su capital. En cuanto a los percentiles, el 25% de las empresas tiene un ROA menor a 2.60%, mientras que el 75% tiene un ROA mayor a 11.60%, lo que indica que aunque hay empresas con bajos retornos, también hay aquellas que están muy bien gestionadas. Por otro lado, los valores máximos son impresionantes: un ROA máximo de 37.40%, un ROE de 924.90% y un ROI de 326.40% sugieren que hay empresas que han logrado un desempeño excepcional.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">orient</span><span class="o">=</span><span class="s1">&#39;h&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Boxplot de distribución de retornos: ROA, ROE Y ROI&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Valores&#39;</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Indicadores&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/5568a7eaa41ea174d39d716b0eb9368c051fd53e92ddad734eb037994edb42df.png" src="_images/5568a7eaa41ea174d39d716b0eb9368c051fd53e92ddad734eb037994edb42df.png" />
+</div>
+</div>
+<p>Acá se puede notar la presencia de datos atípicos, siendo más extremos en ROE, esto esperado dado lo observado en el resumen estadístico. Estos datos extremos, corresponden a un retorno sobre el capital del -850% para Seagate Technology Holdings plc (STX), empresa estadounidense de almacenamiento de dato, lo que indica que la empresa no solo no está siendo rentable, sino que está perdiendo una cantidad significativa de dinero en comparación con el capital que tienen invertido los accionistas; y a un 924.90% de ROE para APA Corporation (APA), el holding de Apache Corporation, una empresa estadounidense dedicada a la exploración de hidrocarburos, lo que sugiere que la empresa está generando ingresos netos extremadamente altos en relación con el capital aportado por los accionistas (patrimonio neto)</p>
+<div class="admonition-observacion admonition">
+<p class="admonition-title">Observación</p>
+<p>Aunque puede parecer positivo a primera vista, un ROE tan elevado suele ser una señal para investigar más a fondo las razones detrás de estos resultados. Factores como bajo patrimonio neto, uso de apalancamiento elevado, eventos excepcionales o errores en los datos pueden explicar este valor fuera de lo común.</p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span> <span class="o">=</span> <span class="s1">&#39;Return on Equity (ttm)&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span> <span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Company</th>
+      <th>Major index membership</th>
+      <th>Market capitalization</th>
+      <th>Income (ttm)</th>
+      <th>Revenue (ttm)</th>
+      <th>Book value per share (mrq)</th>
+      <th>Cash per share (mrq)</th>
+      <th>Dividend (annual)</th>
+      <th>Dividend yield (annual)</th>
+      <th>Full time employees</th>
+      <th>...</th>
+      <th>Performance (Quarter)</th>
+      <th>Performance (Half Year)</th>
+      <th>Performance (Year)</th>
+      <th>Performance (Year To Date)</th>
+      <th>Beta</th>
+      <th>Average True Range (14)</th>
+      <th>Volatility (Week, Month)</th>
+      <th>Previous close</th>
+      <th>Current stock price</th>
+      <th>Performance (today)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>414</th>
+      <td>STX</td>
+      <td>S&amp;P 500</td>
+      <td>13.20B</td>
+      <td>618.00M</td>
+      <td>9.35B</td>
+      <td>-2.28</td>
+      <td>3.71</td>
+      <td>2.80</td>
+      <td>4.40%</td>
+      <td>40000</td>
+      <td>...</td>
+      <td>23.81%</td>
+      <td>-1.51%</td>
+      <td>-28.64%</td>
+      <td>22.85%</td>
+      <td>1.12</td>
+      <td>2.02</td>
+      <td>2.96% 2.85%</td>
+      <td>63.63</td>
+      <td>64.63</td>
+      <td>1.57%</td>
+    </tr>
+  </tbody>
+</table>
+<p>1 rows × 73 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span> <span class="o">=</span> <span class="s1">&#39;Return on Equity (ttm)&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span> <span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Company</th>
+      <th>Major index membership</th>
+      <th>Market capitalization</th>
+      <th>Income (ttm)</th>
+      <th>Revenue (ttm)</th>
+      <th>Book value per share (mrq)</th>
+      <th>Cash per share (mrq)</th>
+      <th>Dividend (annual)</th>
+      <th>Dividend yield (annual)</th>
+      <th>Full time employees</th>
+      <th>...</th>
+      <th>Performance (Quarter)</th>
+      <th>Performance (Half Year)</th>
+      <th>Performance (Year)</th>
+      <th>Performance (Year To Date)</th>
+      <th>Beta</th>
+      <th>Average True Range (14)</th>
+      <th>Volatility (Week, Month)</th>
+      <th>Previous close</th>
+      <th>Current stock price</th>
+      <th>Performance (today)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>38</th>
+      <td>APA</td>
+      <td>S&amp;P 500</td>
+      <td>11.71B</td>
+      <td>3.67B</td>
+      <td>11.07B</td>
+      <td>1.36</td>
+      <td>0.81</td>
+      <td>1.00</td>
+      <td>2.60%</td>
+      <td>2273</td>
+      <td>...</td>
+      <td>-13.82%</td>
+      <td>3.10%</td>
+      <td>-2.14%</td>
+      <td>-19.01%</td>
+      <td>3.55</td>
+      <td>1.58</td>
+      <td>3.35% 3.73%</td>
+      <td>38.49</td>
+      <td>37.81</td>
+      <td>-1.78%</td>
+    </tr>
+  </tbody>
+</table>
+<p>1 rows × 73 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+
+<span class="c1"># Primer gráfico: ROA vs ROE</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Return on Assets (ttm)&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Return on Equity (ttm)&#39;</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Relación entre ROA y ROE&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;ROA (%)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;ROE (%)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Segundo gráfico: ROA vs ROI</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Return on Assets (ttm)&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Return on Investment (ttm)&#39;</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Relación entre ROA y ROI&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;ROA (%)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;ROI (%)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Tercer gráfico: ROE vs ROI</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Return on Equity (ttm)&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Return on Investment (ttm)&#39;</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Relación entre ROE y ROI&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;ROE (%)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;ROI (%)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/c8e264fd641e485ab2732e027ef57b9507c92baad982cbc761594079466970a0.png" src="_images/c8e264fd641e485ab2732e027ef57b9507c92baad982cbc761594079466970a0.png" />
+</div>
+</div>
+<p>No parece haber una relación lineal entre ROA y ROE ni entre ROI y ROE, sin embargo, sí que parece haber una especie de correlación positiva entre ROA y ROI.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">matriz_correlacion</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">matriz_correlacion</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;coolwarm&#39;</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s2">&quot;.2f&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: &gt;
+</pre></div>
+</div>
+<img alt="_images/e845fa7cc3f6c35412d6a05d44e6cf09da06b6901e1bb3c3eb03fbc673e9ef03.png" src="_images/e845fa7cc3f6c35412d6a05d44e6cf09da06b6901e1bb3c3eb03fbc673e9ef03.png" />
+</div>
+</div>
+<p>Esto se confirma con la matriz de correlación, donde ROA y ROI cuentan con un coeficiente de correlación de 0.65.</p>
+</section>
+<section id="margenes">
+<h3>Márgenes<a class="headerlink" href="#margenes" title="Link to this heading">#</a></h3>
+<p>Los márgenes financieros son indicadores clave que miden la rentabilidad de una empresa en diferentes etapas de su operación. Los tres márgenes más comunes son el margen bruto, el margen operativo y el margen neto de utilidades. Estos márgenes muestran cuánta ganancia genera una empresa en relación con sus ingresos en distintas fases del ciclo de negocio.</p>
+<ul class="simple">
+<li><p>El <strong>margen bruto</strong> o <code class="docutils literal notranslate"><span class="pre">gross</span> <span class="pre">margin</span></code> mide la rentabilidad desde el punto de vista de la producción. Un margen bruto más alto indica que la empresa tiene control sobre sus costos directos de producción, lo que le permite generar más ganancias por cada unidad de venta. Este margen refleja la eficiencia en la producción.
+$<span class="math notranslate nohighlight">\(\text{Margen bruto} = \frac{\text{Ventas netas} - \text{Costo de ventas}}{\text{Ventas netas}} * 100\)</span>$</p></li>
+<li><p>El <strong>margen operativo</strong> o <code class="docutils literal notranslate"><span class="pre">operating</span> <span class="pre">margin</span></code> va un paso más allá, considerando los gastos operativos y cómo afectan la rentabilidad. Un margen operativo alto indica que la empresa genera suficientes ingresos para cubrir sus costos operativos y aún dejar ganancias antes de considerar los costos financieros. Un margen bajo sugiere que la empresa tiene dificultades para gestionar sus gastos operativos.
+$<span class="math notranslate nohighlight">\(\text{Margen operativo} = \frac{\text{Ingresos operativos}}{\text{Ventas netas}} * 100\)</span>$</p></li>
+<li><p>El <strong>margen neto de utilidades</strong> o <code class="docutils literal notranslate"><span class="pre">net</span> <span class="pre">profit</span> <span class="pre">margin</span></code> es el indicador más completo, ya que refleja las ganancias finales tras todos los costos y responsabilidades financieras. Este margen refleja la capacidad de la empresa para generar beneficios finales después de todos los costos. Un margen neto alto indica una buena gestión financiera y una estructura de costos eficiente. Un margen neto bajo puede sugerir que los costos financieros o impositivos están afectando la rentabilidad de la empresa.
+$<span class="math notranslate nohighlight">\(\text{Margen neto de utilidades} = \frac{\text{Ingreso neto}}{\text{Ventas netas}} * 100\)</span>$</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;Gross Margin (ttm)&#39;</span><span class="p">,</span> <span class="s1">&#39;Operating Margin (ttm)&#39;</span><span class="p">,</span> <span class="s1">&#39;Net Profit Margin (ttm)&#39;</span><span class="p">]:</span>
+    <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s1">&#39;%&#39;</span><span class="p">))</span> <span class="o">/</span> <span class="mi">100</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="ow">and</span> <span class="s1">&#39;%&#39;</span> <span class="ow">in</span> <span class="n">x</span> <span class="k">else</span> <span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">if</span> <span class="n">pd</span><span class="o">.</span><span class="n">notnull</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">else</span> <span class="n">x</span><span class="p">))</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;Gross Margin (ttm)&#39;</span><span class="p">,</span> <span class="s1">&#39;Operating Margin (ttm)&#39;</span><span class="p">,</span> <span class="s1">&#39;Net Profit Margin (ttm)&#39;</span><span class="p">]]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 496 entries, 0 to 495
+Data columns (total 3 columns):
+ #   Column                   Non-Null Count  Dtype  
+---  ------                   --------------  -----  
+ 0   Gross Margin (ttm)       425 non-null    float64
+ 1   Operating Margin (ttm)   487 non-null    float64
+ 2   Net Profit Margin (ttm)  487 non-null    float64
+dtypes: float64(3)
+memory usage: 11.8 KB
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="n">msno</span><span class="o">.</span><span class="n">matrix</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Matriz de Datos Faltantes&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 300x300 with 0 Axes&gt;
+</pre></div>
+</div>
+<img alt="_images/368d1c892058f7038ae6ef7b0d593c39c694c14589b27b52e842e9f3eb7b2bec.png" src="_images/368d1c892058f7038ae6ef7b0d593c39c694c14589b27b52e842e9f3eb7b2bec.png" />
+</div>
+</div>
+<p>Se destaca la presencia de 71 datos faltantes en el margen bruto y 9 datos faltantes en margen operativo y de margen neto de utilidades.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Gross Margin (ttm)</th>
+      <th>Operating Margin (ttm)</th>
+      <th>Net Profit Margin (ttm)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>425.000000</td>
+      <td>487.000000</td>
+      <td>487.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>0.480659</td>
+      <td>0.202117</td>
+      <td>0.139333</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>0.215113</td>
+      <td>0.191414</td>
+      <td>0.149150</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>0.034000</td>
+      <td>-0.912000</td>
+      <td>-0.961000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>0.313000</td>
+      <td>0.098500</td>
+      <td>0.063500</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>0.449000</td>
+      <td>0.167000</td>
+      <td>0.122000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>0.655000</td>
+      <td>0.268000</td>
+      <td>0.201500</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>0.997000</td>
+      <td>0.900000</td>
+      <td>0.990000</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Los datos indican que, en promedio, las empresas retienen un margen bruto del 48.07%, lo que refleja una sólida eficiencia en la gestión de los costos directos de producción. Sin embargo, el margen operativo, que incluye otros costos como salarios y gastos administrativos, se reduce al 20.21%, lo que muestra que gran parte de los ingresos se consumen en la operación diaria. Finalmente, el margen neto de utilidades es del 13.93%, lo que implica que, tras cubrir todos los costos (incluidos impuestos e intereses), las empresas generan una ganancia modesta.</p>
+<p>La alta dispersión en estos datos es evidente con valores mínimos negativos: algunas empresas tienen márgenes operativos tan bajos como -91.2% y márgenes netos de hasta -96.1%, lo que refleja pérdidas operativas o financieras extremas. En contraste, otras empresas alcanzan márgenes cercanos al 99%, lo que sugiere un control excepcional de los costos y una rentabilidad sobresaliente.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">orient</span><span class="o">=</span><span class="s1">&#39;h&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Boxplot de distribución de margenes: bruto, operativo y neto de utilidades&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Valores&#39;</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Indicadores&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/c1b9b6453cc046a5976195cf62ca0090e241db12a3c7fb0098b66248bb6f25b5.png" src="_images/c1b9b6453cc046a5976195cf62ca0090e241db12a3c7fb0098b66248bb6f25b5.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+
+<span class="c1"># Primer gráfico: gross vs operating</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Gross Margin (ttm)&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Operating Margin (ttm)&#39;</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Relación entre margen bruto y margen operativo&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Gross Margin (%)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Operating Margin (%)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Segundo gráfico: gross vs net profit</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Gross Margin (ttm)&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Net Profit Margin (ttm)&#39;</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Relación entre margen bruto y margen neto de utilidades&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Gross Margin (%)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Net Profit Margin (%)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Tercer gráfico: operating vs net profit</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Operating Margin (ttm)&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Net Profit Margin (ttm)&#39;</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Relación entre margen operativo y margen neto de utilidades&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Operating Margin (%)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Net Profit Margin (%)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/5f124afeeea7d6e16491f52ab5a2d755bc3066b9b7d13a92167fd5600bf0d887.png" src="_images/5f124afeeea7d6e16491f52ab5a2d755bc3066b9b7d13a92167fd5600bf0d887.png" />
+</div>
+</div>
+<p>Se puede notar un alta correlación entre el margen operativo y el margen neto de utilidad, lo cual es confirmado al realizar la matriz de correlación, la cual arroja un del coeficiente de correlación de 0.82. Valores menores como 0.51 y 0.42 se obtienen del margen bruto - margen operativo y margen bruto - neto de utilidad respectivamente.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">matriz_correlacion</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">matriz_correlacion</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;coolwarm&#39;</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s2">&quot;.2f&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: &gt;
+</pre></div>
+</div>
+<img alt="_images/6177c638e70110aad3afe7547f2933e7bff800113b278e01dcccbed43ed8d7cb.png" src="_images/6177c638e70110aad3afe7547f2933e7bff800113b278e01dcccbed43ed8d7cb.png" />
+</div>
+</div>
+</section>
+<section id="ganancias-e-ingresos">
+<h3>Ganancias e ingresos<a class="headerlink" href="#ganancias-e-ingresos" title="Link to this heading">#</a></h3>
+<p>La variable <code class="docutils literal notranslate"><span class="pre">Revenue</span> <span class="pre">(ttm)</span></code> representa las ganancias que las distintas empresas generan por la venta de bienes y servicios en los últimos 12 meses. Es una de las métricas más fundamentales para evaluar la salud financiera de una empresa. Un aumento constante en el <code class="docutils literal notranslate"><span class="pre">Revenue</span> <span class="pre">(ttm)</span></code> puede indicar un crecimiento sólido en la demanda de productos o servicios, una estrategia de marketing efectiva y una gestión eficiente.</p>
+<p>Por otro lado, la variable <code class="docutils literal notranslate"><span class="pre">Income</span> <span class="pre">(ttm)</span></code> representa las ganancias netas que una empresa ha generado en los últimos 12 meses. Esta métrica es esencial para evaluar la rentabilidad y la salud financiera de una empresa, ya que muestra lo que queda después de deducir todos los costos, gastos e impuestos de los ingresos totales. Un aumento constante en los ingresos puede indicar un desempeño sólido, una gestión eficiente de costos y una capacidad efectiva para generar beneficios a partir de las ventas.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Revenue (ttm)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.series.Series&#39;&gt;
+RangeIndex: 496 entries, 0 to 495
+Series name: Revenue (ttm)
+Non-Null Count  Dtype 
+--------------  ----- 
+496 non-null    object
+dtypes: object(1)
+memory usage: 4.0+ KB
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Income (ttm)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.series.Series&#39;&gt;
+RangeIndex: 496 entries, 0 to 495
+Series name: Income (ttm)
+Non-Null Count  Dtype 
+--------------  ----- 
+491 non-null    object
+dtypes: object(1)
+memory usage: 4.0+ KB
+</pre></div>
+</div>
+</div>
+</div>
+<p>No hay ganancias faltantes pero existen 5 empresas sin información de los ingresos.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Revenue (ttm)&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Revenue (ttm)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">clean_mb</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Income (ttm)&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Income (ttm)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">clean_mb</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;Revenue (ttm)&#39;</span><span class="p">,</span> <span class="s1">&#39;Income (ttm)&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">describe</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Revenue (ttm)</th>
+      <th>Income (ttm)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>4.960000e+02</td>
+      <td>4.910000e+02</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>3.166717e+10</td>
+      <td>3.134273e+09</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>6.219970e+10</td>
+      <td>7.701913e+09</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>7.183000e+08</td>
+      <td>-1.672000e+10</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>5.830000e+09</td>
+      <td>5.825000e+08</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>1.266500e+10</td>
+      <td>1.200000e+09</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>2.719000e+10</td>
+      <td>3.150000e+09</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>6.112900e+11</td>
+      <td>9.517000e+10</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Revenue (ttm)&#39;</span><span class="p">],</span> <span class="n">orient</span><span class="o">=</span><span class="s1">&#39;h&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Boxplot de distribución de las ganancias en cien mil millones&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Ganancias&#39;</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/fed60dd78326b5695f983142a57fb85e528678214059904c30982cfdf667aaa5.png" src="_images/fed60dd78326b5695f983142a57fb85e528678214059904c30982cfdf667aaa5.png" />
+</div>
+</div>
+<p>Las ganancias promedio son de aproximadamente 31.67 mil millones, indicando que muchas empresas generan ganancias significativas. Sin embargo, la desviación estándar de 62.20 mil millones sugiere una alta variabilidad, lo que implica la existencia de algunas empresas mucho más grandes que dominan el mercado. El mínimo es de 718.3 millones y el máximo alcanza 611.29 mil millones, reflejando una notable diferencia entre las empresas con menores y mayores ganancias. Los percentiles 25 y 75 (5.83 y 27.19 mil millones, respectivamente) indican que el 25% superior de las empresas genera considerablemente más que la mayoría. En conjunto, estos datos revelan un entorno empresarial diverso con una mezcla de empresas pequeñas y grandes.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Income (ttm)&#39;</span><span class="p">],</span> <span class="n">orient</span><span class="o">=</span><span class="s1">&#39;h&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Boxplot de distribución de los ingresos en cien mil millones&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Ingresos&#39;</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/a740982ae6e77a7d777c17bad5730a9c6e5d196b84b2b5eb1245ec4ddc3d26eb.png" src="_images/a740982ae6e77a7d777c17bad5730a9c6e5d196b84b2b5eb1245ec4ddc3d26eb.png" />
+</div>
+</div>
+<p>El ingreso promedio de las empresas es de aproximadamente 3.13 mil millones, lo que indica que, en general, las empresas generan ganancias importantes. Sin embargo, la desviación estándar de 7.70 mil millones sugiere una alta variabilidad entre las empresas, lo que significa que algunas generan significativamente más o menos ingresos. El valor mínimo es de -16.72 mil millones, lo que indica que algunas empresas reportaron pérdidas considerables, mientras que el valor máximo es de 95.17 mil millones, lo que refleja la presencia de empresas con enormes ganancias. El percentil 25 es de 582.5 millones y el percentil 75 es de 3.15 mil millones, lo que indica que el 25% superior de las empresas genera notablemente más ganancias que el resto. Estos datos muestran una amplia dispersión en la rentabilidad, con una mezcla de empresas con bajos ingresos y otras con ganancias muy altas.</p>
+</section>
+<section id="ganancias-diluidas-por-accion">
+<h3>Ganancias diluidas por acción<a class="headerlink" href="#ganancias-diluidas-por-accion" title="Link to this heading">#</a></h3>
+<p>Esta es una medida financiera que indica la cantidad de ganancias atribuibles a cada acción ordinaria en circulación de una empresa, teniendo en cuenta la dilución que podría ocurrir si todas las opciones sobre acciones, bonos convertibles y otros instrumentos que podrían convertirse en acciones se ejercieran. El EPS diluido proporciona una visión más conservadora de las ganancias por acción, ya que considera la posible dilución de las acciones. Esto es particularmente relevante para los inversionistas, ya que permite evaluar el impacto de futuras emisiones de acciones en la rentabilidad por acción.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">convert_to_float</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">if</span> <span class="n">pd</span><span class="o">.</span><span class="n">notnull</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">else</span> <span class="n">x</span>
+    <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">None</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Diluted EPS (ttm)&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Diluted EPS (ttm)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">convert_to_float</span><span class="p">)</span>
+
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Diluted EPS (ttm)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.series.Series&#39;&gt;
+RangeIndex: 496 entries, 0 to 495
+Series name: Diluted EPS (ttm)
+Non-Null Count  Dtype  
+--------------  -----  
+495 non-null    float64
+dtypes: float64(1)
+memory usage: 4.0 KB
+</pre></div>
+</div>
+</div>
+</div>
+<p>Se destaca la presencia de solo un dato faltante.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Diluted EPS (ttm)&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>count    495.000000
+mean       7.338667
+std       24.617692
+min     -121.140000
+25%        2.075000
+50%        4.500000
+75%        8.265000
+max      492.330000
+Name: Diluted EPS (ttm), dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Diluted EPS (ttm)&#39;</span><span class="p">],</span> <span class="n">orient</span><span class="o">=</span><span class="s1">&#39;h&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Boxplot de ganancias diluidas por acción&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Ingresos&#39;</span><span class="p">)</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/63eb4f18b3af8cc4a496db8f0a167e6314667fa7ddf386a73c05ddaf131bbc07.png" src="_images/63eb4f18b3af8cc4a496db8f0a167e6314667fa7ddf386a73c05ddaf131bbc07.png" />
+</div>
+</div>
+<p>El ingreso promedio por acción diluida (EPS) es de aproximadamente 7.34, lo que sugiere que muchas empresas generan ganancias modestas por acción. Sin embargo, la desviación estándar de 24.62 indica una alta variabilidad, lo que implica que existen algunas empresas con ganancias por acción significativamente más altas o, en algunos casos, negativas. El mínimo es de -121.14, lo que refleja que hay empresas que han experimentado pérdidas considerables, mientras que el máximo alcanza 492.33, mostrando una notable diferencia entre las empresas con menores y mayores EPS. Los percentiles 25 y 75 (2.08 y 8.27, respectivamente) indican que el 25% superior de las empresas genera ganancias por acción considerablemente más altas que la mayoría. En conjunto, estos datos revelan un entorno empresarial diverso, con una mezcla de empresas que obtienen ganancias modestas, algunas con pérdidas y otras con resultados excepcionales.</p>
+</section>
+<section id="crecimiento-de-eps">
+<h3>Crecimiento de EPS<a class="headerlink" href="#crecimiento-de-eps" title="Link to this heading">#</a></h3>
+<p>El crecimiento del EPS (earnings per share, o ganancias por acción) es un indicador financiero crucial que refleja la capacidad de una empresa para generar ganancias en relación con el número de acciones en circulación. Este indicador se utiliza ampliamente por inversionistas y analistas para evaluar la rentabilidad y el rendimiento de una empresa. El EPS se calcula dividiendo las ganancias netas de una empresa, menos las ganancias preferentes, entre el número promedio de acciones en circulación, es decir:</p>
+<div class="math notranslate nohighlight">
+\[\textup{Crecimiento del EPS} = \frac{\textup{EPS de periodo actual} - \textup{EPS del periodo anterior}}{\textup{EPS del periodo anterior}} * 100\]</div>
+<p>Un crecimiento positivo del EPS indica que la empresa está aumentando sus ganancias, lo que suele ser un buen signo para los inversionistas.</p>
+<p>En el dataframe se cuenta con el crecimiento de EPS de este año, crecimiento de EPS del próximo año, un estimado del crecimiento EPS para el siguiente y el crecimiento EPS estimado para el siguiente rimestre.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">interes</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;EPS estimate for next quarter&#39;</span><span class="p">,</span><span class="s1">&#39;EPS estimate for next year&#39;</span><span class="p">,</span> <span class="s1">&#39;EPS growth next year&#39;</span><span class="p">,</span> <span class="s1">&#39;EPS growth this year&#39;</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">interes</span><span class="p">:</span>
+    <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s1">&#39;%&#39;</span><span class="p">))</span> <span class="o">/</span> <span class="mi">100</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="ow">and</span> <span class="s1">&#39;%&#39;</span> <span class="ow">in</span> <span class="n">x</span> <span class="k">else</span> <span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">if</span> <span class="n">pd</span><span class="o">.</span><span class="n">notnull</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">else</span> <span class="n">x</span><span class="p">))</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">interes</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 496 entries, 0 to 495
+Data columns (total 4 columns):
+ #   Column                         Non-Null Count  Dtype  
+---  ------                         --------------  -----  
+ 0   EPS estimate for next quarter  493 non-null    float64
+ 1   EPS estimate for next year     493 non-null    float64
+ 2   EPS growth next year           493 non-null    float64
+ 3   EPS growth this year           493 non-null    float64
+dtypes: float64(4)
+memory usage: 15.6 KB
+</pre></div>
+</div>
+</div>
+</div>
+<p>Existen tres datos faltantes por cada crecimiento de EPS.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="n">msno</span><span class="o">.</span><span class="n">matrix</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Matriz de Datos Faltantes&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 300x300 with 0 Axes&gt;
+</pre></div>
+</div>
+<img alt="_images/f783da4698b8713d6b75c8f53083c6287ad58c0964db804a3ba5971ec1ed6f1c.png" src="_images/f783da4698b8713d6b75c8f53083c6287ad58c0964db804a3ba5971ec1ed6f1c.png" />
+</div>
+</div>
+<p>Se observa que en dos empresas no se se tiene infromación sobre ninguno de los crecimientos de EPS, en otra no se tiene información del EPS estimado para el siguiente trimestre y año y el crecimiento para el siguiente año, y por último, una empresa no se tiene información del crecimiento de este año.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>EPS estimate for next quarter</th>
+      <th>EPS estimate for next year</th>
+      <th>EPS growth next year</th>
+      <th>EPS growth this year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>493.000000</td>
+      <td>493.000000</td>
+      <td>493.000000</td>
+      <td>493.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>2.064604</td>
+      <td>10.098641</td>
+      <td>0.259849</td>
+      <td>0.094517</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>4.547388</td>
+      <td>19.972680</td>
+      <td>1.164447</td>
+      <td>1.143340</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>-1.550000</td>
+      <td>-3.330000</td>
+      <td>-0.489000</td>
+      <td>-7.642000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>0.670000</td>
+      <td>3.820000</td>
+      <td>0.070900</td>
+      <td>-0.242000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>1.320000</td>
+      <td>6.430000</td>
+      <td>0.109900</td>
+      <td>0.043000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>2.340000</td>
+      <td>11.320000</td>
+      <td>0.168400</td>
+      <td>0.319000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>88.960000</td>
+      <td>363.320000</td>
+      <td>17.000000</td>
+      <td>6.839000</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;EPS estimate for next quarter&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;EPS estimado para el siguiente trimestre&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;EPS estimate for next year&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;EPS estimado para el siguiente año&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;orange&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;EPS growth next year&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Crecimiento de EPS en el próximo año&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;EPS growth this year&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Crecimiento de EPS este año&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;EPS estimados y crecimiento de EPS&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Índice&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Valor&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+
+<span class="c1"># Mostrar el gráfico</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/eca0f308dd9762f56d76b06a8ae05833d90e1362b802e25ef8d12a3e16bb8f6d.png" src="_images/eca0f308dd9762f56d76b06a8ae05833d90e1362b802e25ef8d12a3e16bb8f6d.png" />
+</div>
+</div>
+<p>Los datos sobre las estimaciones de EPS y el crecimiento reflejan un rango amplio de expectativas y variabilidad. La estimación promedio de EPS para el próximo trimestre es de aproximadamente 2.06, mientras que la estimación para el próximo año es significativamente mayor, alcanzando un promedio de 10.10. Esto sugiere que los analistas anticipan un aumento considerable en las ganancias a medida que se proyecta hacia el futuro. Sin embargo, la alta desviación estándar de 4.55 para el EPS del próximo trimestre y de 19.97 para el EPS del próximo año indica una notable variabilidad en las estimaciones, lo que implica que algunos analistas esperan resultados mucho más altos o más bajos que la media.</p>
+<p>El crecimiento esperado del EPS para el próximo año muestra un promedio de aproximadamente 0.26%, con un crecimiento más modesto del 9.45% para este año. La desviación estándar de 1.16 y 1.14, respectivamente, sugiere que existe un rango considerable en las expectativas de crecimiento, evidenciado por los valores mínimos negativos, que indican que algunos analistas prevén caídas en el EPS, mientras que los valores máximos alcanzan 17.00 y 6.84, respectivamente, sugiriendo que otros anticipan crecimientos robustos. Los percentiles también revelan una distribución asimétrica: el 25% de las estimaciones para el crecimiento del EPS este año son negativas, lo que indica que una parte de las empresas enfrenta desafíos significativos, mientras que el 75% restante proyecta un crecimiento moderado. En conjunto, estos datos sugieren un panorama de ganancias en el que, aunque hay optimismo sobre el crecimiento futuro, persisten importantes diferencias en las expectativas entre las empresas.</p>
+</section>
+</section>
+<section id="otras-variables">
+<h2>Otras variables<a class="headerlink" href="#otras-variables" title="Link to this heading">#</a></h2>
+<section id="ratios-financieros">
+<h3>Ratios financieros<a class="headerlink" href="#ratios-financieros" title="Link to this heading">#</a></h3>
+<p>Dentro de las variables encontramos varios <strong>ratios financieros</strong>, los cuales son herramientas esenciales para evaluar la salud y el rendimiento de una empresa. El <strong>Precio a ganancias (P/E)</strong> y el <strong>Precio a ganancias proyectado (Forward P/E)</strong> comparan el precio de la acción con las ganancias actuales y proyectadas, respectivamente, ayudando a determinar si la acción está sobrevalorada o subvalorada. El <strong>Precio a libro (P/B)</strong> y el <strong>Precio a ventas (P/S)</strong> analizan el valor contable y las ventas, brindando una perspectiva sobre el valor intrínseco de la empresa. Por otro lado, el <strong>Precio a flujo de caja libre (P/FCF)</strong> se enfoca en el flujo de caja libre, crucial para entender la generación de efectivo. En cuanto a la deuda, la relación <strong>deuda/capital (Debt/Eq)</strong> y la <strong>relación deuda a largo plazo/capital (LT Debt/Eq)</strong> permiten evaluar la estructura de capital y el riesgo asociado con el financiamiento. Finalmente, el <strong>ratio rápido (Quick Ratio)</strong> y el <strong>ratio corriente (Current Ratio)</strong> ofrecen una visión de la liquidez a corto plazo, indicando la capacidad de la empresa para cumplir con sus obligaciones inmediatas. En conjunto, estos ratios proporcionan una visión integral del desempeño y la solidez financiera de una empresa, lo que facilita la toma de decisiones informadas.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">interes</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Price-to-Earnings (ttm)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Forward Price-to-Earnings (next fiscal year)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Price-to-Book (mrq)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Price-to-Sales (ttm)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Price to Free Cash Flow (ttm)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Total Debt to Equity (mrq)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Long Term Debt to Equity (mrq)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Quick Ratio (mrq)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Current Ratio (mrq)&quot;</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">interes</span><span class="p">:</span>
+    <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s1">&#39;%&#39;</span><span class="p">))</span> <span class="o">/</span> <span class="mi">100</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="ow">and</span> <span class="s1">&#39;%&#39;</span> <span class="ow">in</span> <span class="n">x</span> <span class="k">else</span> <span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">if</span> <span class="n">pd</span><span class="o">.</span><span class="n">notnull</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">else</span> <span class="n">x</span><span class="p">))</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">interes</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Price-to-Earnings (ttm)</th>
+      <th>Forward Price-to-Earnings (next fiscal year)</th>
+      <th>Price-to-Book (mrq)</th>
+      <th>Price-to-Sales (ttm)</th>
+      <th>Price to Free Cash Flow (ttm)</th>
+      <th>Total Debt to Equity (mrq)</th>
+      <th>Long Term Debt to Equity (mrq)</th>
+      <th>Quick Ratio (mrq)</th>
+      <th>Current Ratio (mrq)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>457.000000</td>
+      <td>491.000000</td>
+      <td>462.000000</td>
+      <td>496.000000</td>
+      <td>406.000000</td>
+      <td>458.000000</td>
+      <td>458.000000</td>
+      <td>406.000000</td>
+      <td>407.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>33.719015</td>
+      <td>19.129674</td>
+      <td>11.038831</td>
+      <td>3.645141</td>
+      <td>61.108744</td>
+      <td>2.229192</td>
+      <td>2.000197</td>
+      <td>1.175862</td>
+      <td>1.540541</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>60.057916</td>
+      <td>17.926697</td>
+      <td>66.187037</td>
+      <td>3.335920</td>
+      <td>145.550041</td>
+      <td>10.621333</td>
+      <td>9.896347</td>
+      <td>0.802778</td>
+      <td>0.954457</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>3.100000</td>
+      <td>3.070000</td>
+      <td>0.290000</td>
+      <td>0.100000</td>
+      <td>1.300000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.100000</td>
+      <td>0.300000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>15.120000</td>
+      <td>11.540000</td>
+      <td>1.900000</td>
+      <td>1.310000</td>
+      <td>13.957500</td>
+      <td>0.390000</td>
+      <td>0.400000</td>
+      <td>0.700000</td>
+      <td>0.900000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>22.700000</td>
+      <td>16.470000</td>
+      <td>3.290000</td>
+      <td>2.645000</td>
+      <td>31.370000</td>
+      <td>0.705000</td>
+      <td>0.675000</td>
+      <td>1.000000</td>
+      <td>1.300000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>33.170000</td>
+      <td>22.125000</td>
+      <td>6.547500</td>
+      <td>4.655000</td>
+      <td>53.202500</td>
+      <td>1.450000</td>
+      <td>1.280000</td>
+      <td>1.400000</td>
+      <td>1.800000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>888.110000</td>
+      <td>342.790000</td>
+      <td>1330.570000</td>
+      <td>21.610000</td>
+      <td>1887.450000</td>
+      <td>198.560000</td>
+      <td>184.120000</td>
+      <td>5.400000</td>
+      <td>7.200000</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>En general, el Precio a ganancias (P/E) tiene un valor promedio de aproximadamente 33.72, con una alta desviación estándar de 60.06, lo que indica una gran variabilidad en las valoraciones de las acciones, desde un mínimo de 3.10 hasta un máximo notable de 888.11. Esto sugiere que algunas empresas están significativamente sobrevaloradas en comparación con otras. El Forward Price-to-Earnings (next fiscal year) presenta un promedio de 19.13, también con una desviación estándar considerable de 17.93, lo que indica una diversidad en las expectativas de ganancias futuras entre las empresas, con un rango de 3.07 a 342.79. En cuanto al Precio a libro (P/B), el promedio es de 11.04, con una alta dispersión (desviación estándar de 66.19), evidenciando que algunas empresas tienen un valor contable considerablemente menor o mayor en relación con su precio de acción. El Precio a ventas (P/S), con un promedio de 3.65, también muestra variabilidad, con un rango que va de 0.10 a 21.61, lo que sugiere diferencias significativas en la rentabilidad de las ventas entre las empresas. El Precio a flujo de caja libre (P/FCF) tiene un promedio de 61.11, con una desviación estándar de 145.55, lo que implica que algunas empresas generan mucho más flujo de caja libre en comparación con otras. La relación deuda/capital (Debt/Eq) tiene un promedio de 2.23, sugiriendo que, en promedio, las empresas tienen más de dos veces su capital en deuda, mientras que el Long Term Debt to Equity (LT Debt/Eq), con un promedio de 2.00, indica que la deuda a largo plazo es comparable. Los ratios de liquidez como el Quick Ratio (mrq) y el Current Ratio (mrq) muestran promedios de 1.18 y 1.54, respectivamente, lo que sugiere que, en promedio, las empresas tienen suficiente liquidez para cubrir sus obligaciones a corto plazo, aunque la variabilidad en estos ratios (0.80 y 0.95 de desviación estándar) sugiere que algunas empresas pueden enfrentar problemas de liquidez.</p>
+<p>Dentro de las variables restantes que pueden ser encontradas en el dataframe, se observan indicadores de volatilidad y riesgo, liquidez y solvencia, y tendencias y medias móviles, además de desempeño histórico y propiedad y transacciones internas que no son relevantes para el objetivo de este trabajo.</p>
+</section>
+</section>
+<section id="correlacion-de-variables-de-interes">
+<h2>Correlación de variables de interés<a class="headerlink" href="#correlacion-de-variables-de-interes" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_sel</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span><span class="s1">&#39;Company&#39;</span><span class="p">,</span><span class="s1">&#39;Major index membership&#39;</span><span class="p">,</span> <span class="s1">&#39;Market capitalization&#39;</span><span class="p">,</span> <span class="s1">&#39;Return on Assets (ttm)&#39;</span><span class="p">,</span> <span class="s1">&#39;Return on Equity (ttm)&#39;</span><span class="p">,</span> <span class="s1">&#39;Return on Investment (ttm)&#39;</span><span class="p">,</span>
+             <span class="s1">&#39;Gross Margin (ttm)&#39;</span><span class="p">,</span> <span class="s1">&#39;Operating Margin (ttm)&#39;</span><span class="p">,</span> <span class="s1">&#39;Net Profit Margin (ttm)&#39;</span><span class="p">,</span> <span class="s1">&#39;Income (ttm)&#39;</span><span class="p">,</span> <span class="s1">&#39;Revenue (ttm)&#39;</span><span class="p">,</span> <span class="s1">&#39;Diluted EPS (ttm)&#39;</span><span class="p">,</span> <span class="s1">&#39;EPS estimate for next quarter&#39;</span><span class="p">,</span>
+             <span class="s1">&#39;EPS estimate for next year&#39;</span><span class="p">,</span> <span class="s1">&#39;EPS growth next year&#39;</span><span class="p">,</span> <span class="s1">&#39;EPS growth this year&#39;</span><span class="p">]]</span>
+
+<span class="n">df_num</span> <span class="o">=</span> <span class="n">df_sel</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;float64&#39;</span><span class="p">,</span> <span class="s1">&#39;int64&#39;</span><span class="p">])</span>
+<span class="n">matriz_correlacion</span> <span class="o">=</span> <span class="n">df_num</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">15</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">matriz_correlacion</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;coolwarm&#39;</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s2">&quot;.2f&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: &gt;
+</pre></div>
+</div>
+<img alt="_images/bceb69cfd8ffbb30b1cefc91fe35f9ea514ec7de7e976e1bc1d6e6f0e24f0317.png" src="_images/bceb69cfd8ffbb30b1cefc91fe35f9ea514ec7de7e976e1bc1d6e6f0e24f0317.png" />
+</div>
+</div>
+<p>Se observa una fuerte correlación positiva (0.84) entre la capitalización de mercado y los ingresos, lo que indica que, en general, las empresas más grandes tienden a generar mayores ingresos. Los márgenes operativos y netos están altamente correlacionados (0.82), lo que refleja que una mejor gestión de costos operativos a menudo resulta en mayores beneficios netos para las empresas. También, existe una alta correlación (0.65) entre ROA y ROI, lo que implica que las empresas que gestionan bien sus activos también tienden a tener buenas inversiones.</p>
+<p>Llama la atención la alta correlación de las estimaciones de EPS para el próximo trimestre (0.93) y el próximo año (0.91), lo que indica que las expectativas futuras de ganancias están fuertemente alineadas con las ganancias actuales.</p>
+</section>
+<section id="imputacion-de-datos-faltantes-con-iterativeimputer">
+<h2>Imputación de datos faltantes con IterativeImputer()<a class="headerlink" href="#imputacion-de-datos-faltantes-con-iterativeimputer" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">imputer</span> <span class="o">=</span> <span class="n">IterativeImputer</span><span class="p">(</span><span class="n">max_iter</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">df_imputed</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">imputer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df_num</span><span class="p">),</span> <span class="n">columns</span><span class="o">=</span><span class="n">df_num</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+<span class="n">df_sel</span><span class="p">[</span><span class="n">df_num</span><span class="o">.</span><span class="n">columns</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_imputed</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_sel</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Company                          0
+Major index membership           6
+Market capitalization            0
+Return on Assets (ttm)           0
+Return on Equity (ttm)           0
+Return on Investment (ttm)       0
+Gross Margin (ttm)               0
+Operating Margin (ttm)           0
+Net Profit Margin (ttm)          0
+Income (ttm)                     0
+Revenue (ttm)                    0
+Diluted EPS (ttm)                0
+EPS estimate for next quarter    0
+EPS estimate for next year       0
+EPS growth next year             0
+EPS growth this year             0
+dtype: int64
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\Valen\AppData\Local\Temp\ipykernel_1240\2473284826.py:5: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_sel[df_num.columns] = df_imputed
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">msno</span><span class="o">.</span><span class="n">matrix</span><span class="p">(</span><span class="n">df_sel</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="p">(</span><span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">),</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Matriz de Datos Faltantes&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 1200x600 with 0 Axes&gt;
+</pre></div>
+</div>
+<img alt="_images/f14d474aa5c7f4c205fee569aa0a2d7a5a4e1d57300ad99bd872e710d85227b2.png" src="_images/f14d474aa5c7f4c205fee569aa0a2d7a5a4e1d57300ad99bd872e710d85227b2.png" />
+</div>
+</div>
+<p>Ahora solo se presentan datos faltantes en <code class="docutils literal notranslate"><span class="pre">Major</span> <span class="pre">index</span> <span class="pre">membership</span></code>, variable que ya fue revisada y corresponden a empresas que on figuran en inguno de los índices principales.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_num</span> <span class="o">=</span> <span class="n">df_sel</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;float64&#39;</span><span class="p">,</span> <span class="s1">&#39;int64&#39;</span><span class="p">])</span>
+<span class="n">matriz_correlacion</span> <span class="o">=</span> <span class="n">df_num</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">15</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">matriz_correlacion</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;coolwarm&#39;</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s2">&quot;.2f&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: &gt;
+</pre></div>
+</div>
+<img alt="_images/67d6bae463e90cf890446878e3f5405e6eb098b4b04752a793ddc75f5cc0b040.png" src="_images/67d6bae463e90cf890446878e3f5405e6eb098b4b04752a793ddc75f5cc0b040.png" />
+</div>
+</div>
+<p>Al comparar la nueva correlación con la de las variables antes de imputar, no parece haber cambios significativos, manteniendo magnitudes y signos.</p>
+</section>
+<section id="vif">
+<h2>VIF<a class="headerlink" href="#vif" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_num</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">add_constant</span><span class="p">(</span><span class="n">df_num</span><span class="p">)</span>
+
+<span class="n">vif_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+<span class="n">vif_data</span><span class="p">[</span><span class="s1">&#39;Variable&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_num</span><span class="o">.</span><span class="n">columns</span>
+<span class="n">vif_data</span><span class="p">[</span><span class="s1">&#39;VIF&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">variance_inflation_factor</span><span class="p">(</span><span class="n">df_num</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">df_num</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">vif_data</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                         Variable        VIF
+0                           const  10.441742
+1           Market capitalization   4.506196
+2          Return on Assets (ttm)   3.505183
+3          Return on Equity (ttm)   1.085905
+4      Return on Investment (ttm)   2.070405
+5              Gross Margin (ttm)   2.086500
+6          Operating Margin (ttm)   4.722008
+7         Net Profit Margin (ttm)   4.914455
+8                    Income (ttm)   4.708763
+9                   Revenue (ttm)   1.933360
+10              Diluted EPS (ttm)   9.548762
+11  EPS estimate for next quarter  18.312148
+12     EPS estimate for next year  13.173909
+13           EPS growth next year   1.116216
+14           EPS growth this year   1.280250
+</pre></div>
+</div>
+</div>
+</div>
+<p>Se procede a eliminar la variable con mayor VIF, es decir, el EPs estimado para el próximo trimestre y se repetirá el proceso para las variables restantes.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_num</span> <span class="o">=</span> <span class="n">df_num</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span> <span class="p">[</span><span class="s1">&#39;EPS estimate for next quarter&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_num</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">add_constant</span><span class="p">(</span><span class="n">df_num</span><span class="p">)</span>
+
+<span class="n">vif_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
+<span class="n">vif_data</span><span class="p">[</span><span class="s1">&#39;Variable&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_num</span><span class="o">.</span><span class="n">columns</span>
+<span class="n">vif_data</span><span class="p">[</span><span class="s1">&#39;VIF&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">variance_inflation_factor</span><span class="p">(</span><span class="n">df_num</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">df_num</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">vif_data</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                      Variable        VIF
+0                        const  10.415642
+1        Market capitalization   4.503434
+2       Return on Assets (ttm)   3.469189
+3       Return on Equity (ttm)   1.085773
+4   Return on Investment (ttm)   2.059962
+5           Gross Margin (ttm)   2.085128
+6       Operating Margin (ttm)   4.721911
+7      Net Profit Margin (ttm)   4.914242
+8                 Income (ttm)   4.708369
+9                Revenue (ttm)   1.924666
+10           Diluted EPS (ttm)   6.790234
+11  EPS estimate for next year   6.259998
+12        EPS growth next year   1.103093
+13        EPS growth this year   1.259225
+</pre></div>
+</div>
+</div>
+</div>
+<p>Ahora todas las variables cuentan con un VIF inferior a 10 se puede considerar estar libre de problemas de multicolinealidad.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Welcome to your Jupyter Book</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Librerías</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sobre-el-dataset">Sobre el dataset</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datos-faltantes">Datos faltantes</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sobre-las-variables">Sobre las variables</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ticker-y-membresia-en-indice-principal">Ticker y membresía en índice principal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#capitalizacion-del-mercado">Capitalización del mercado</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#indicadores-de-rentabilidad-y-desempeno-financiero">Indicadores de rentabilidad y desempeño financiero</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#roa-roe-y-roi">ROA, ROE y ROI</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#margenes">Márgenes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ganancias-e-ingresos">Ganancias e ingresos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ganancias-diluidas-por-accion">Ganancias diluidas por acción</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#crecimiento-de-eps">Crecimiento de EPS</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#otras-variables">Otras variables</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ratios-financieros">Ratios financieros</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#correlacion-de-variables-de-interes">Correlación de variables de interés</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#imputacion-de-datos-faltantes-con-iterativeimputer">Imputación de datos faltantes con IterativeImputer()</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vif">VIF</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
